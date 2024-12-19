@@ -14,7 +14,8 @@ By analyzing this dataset, the peer-to-peer lending company can better assess bo
 credit-risk-classification/  
 │  
 ├── Credit_Risk/  
-│   ├── credit_risk_classification.ipynb   # Jupyter Notebook with model development  
+│   ├── credit_risk_classification.ipynb   # Jupyter Notebook with model development
+| 
 │   └── lending_data.csv                   # Historical lending data  
 │  
 ├── README.md                              # Project documentation  
