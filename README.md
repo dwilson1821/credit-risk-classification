@@ -14,8 +14,7 @@ By analyzing this dataset, the peer-to-peer lending company can better assess bo
 credit-risk-classification/  
 │  
 ├── Credit_Risk/  
-│   ├── credit_risk_classification.ipynb   # Jupyter Notebook with model development
-| 
+│   ├── credit_risk_classification.ipynb   # Jupyter Notebook with model development 
 │   └── lending_data.csv                   # Historical lending data  
 │  
 ├── README.md                              # Project documentation  
@@ -29,7 +28,7 @@ credit-risk-classification/
 The dataset, `lending_data.csv`, contains historical loan data with the following details:  
 
 - **loan_status**: Target variable (0 = healthy loan, 1 = high-risk loan)  
-- **Features**: Various borrower attributes used to determine credit risk.  
+- **Features**: Various borrower attributes used to determine credit risk. These attributes include loan size, interest rate, borrower income, debt to income, number of accounts, deragatory marks, and total debt   
 
 ---
 
@@ -57,13 +56,13 @@ The dataset, `lending_data.csv`, contains historical loan data with the followin
 
 ### Logistic Regression Model Performance  
 
-- **Accuracy Score**: X.XX (replace with actual score)  
+- **Accuracy Score**: 0.99 
 - **Precision Score**:  
-   - **Class 0 (Healthy Loans)**: X.XX  
-   - **Class 1 (High-Risk Loans)**: X.XX  
+   - **Class 0 (Healthy Loans)**: 1.00  
+   - **Class 1 (High-Risk Loans)**: 0.87  
 - **Recall Score**:  
-   - **Class 0 (Healthy Loans)**: X.XX  
-   - **Class 1 (High-Risk Loans)**: X.XX  
+   - **Class 0 (Healthy Loans)**: 1.00  
+   - **Class 1 (High-Risk Loans)**: 0.95  
 
 ### Confusion Matrix  
 The confusion matrix provides the breakdown of predictions:  
@@ -77,26 +76,23 @@ The confusion matrix provides the breakdown of predictions:
 
 ## Summary  
 
-The logistic regression model demonstrates [strong/moderate/poor] performance in predicting credit risk based on the evaluation metrics.  
+The logistic regression model demonstrates strong performance in predicting credit risk based on the evaluation metrics.  
 
-- **Healthy Loans (0)**: The model achieved a precision of X.XX and a recall of X.XX, indicating that it can correctly identify most healthy loans.  
-- **High-Risk Loans (1)**: The model achieved a precision of X.XX and a recall of X.XX, reflecting its ability to identify high-risk loans, though [there may be some false positives/negatives].  
+- **Healthy Loans (0)**: The model achieved a precision of 1.00 and a recall of 1.00, indicating that it can correctly identify most healthy loans.  
+- **High-Risk Loans (1)**: The model achieved a precision of 0.87 and a recall of 0.95, reflecting its ability to identify high-risk loans, though there may be some false positives.  
 
 ### Recommendation  
 
 Given the results:  
-- If the accuracy and recall scores are high:  
-   > The logistic regression model is suitable for predicting credit risk and can be implemented by the company to evaluate borrower creditworthiness.  
-- If the performance is suboptimal:  
-   > Further improvements may be required, such as exploring other machine learning models (e.g., Random Forest or SVM) or tuning hyperparameters to improve predictive accuracy.  
-
+- The logistic regression model is suitable for predicting credit risk and can be implemented by the company to evaluate borrower creditworthiness. However, th precision for high-risk loans (87%) is slightly lower, meaning that some loans predicted as high-risk are actually healthy. This could lead to conservative lending decisions where some borrowers are unnecessarily classified as risky. 
+  
 ---
 
 ## Instructions to Run the Project  
 
 1. **Clone the Repository**  
    ```bash  
-   git clone https://github.com/your-username/credit-risk-classification.git  
+   git clone https://github.com/dwilson1821/credit-risk-classification.git  
    cd credit-risk-classification  
    ```  
 
