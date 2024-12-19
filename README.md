@@ -121,4 +121,8 @@ Given the results:
 - **Python**: For data analysis and machine learning.  
 - **Pandas**: Data manipulation and cleaning.  
 - **scikit-learn**: Train-test splitting, logistic regression, and model evaluation.  
-- **Jupyter Notebook**: Run and document the analysis.  
+- **Jupyter Notebook**: Run and document the analysis.
+
+  
+---
+Note: Xpert Learning Assistant was used to help with minor errors faced in the coding process. ChatGPT was used to create a template for the ReadMe. 
